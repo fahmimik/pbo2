@@ -20,6 +20,9 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Javanese Text" size="12" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="NAMA"/>
       </Properties>
       <Constraints>
@@ -30,6 +33,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Javanese Text" size="12" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="NIM"/>
       </Properties>
       <Constraints>
@@ -40,6 +46,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Javanese Text" size="12" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="UKM"/>
       </Properties>
       <Constraints>
@@ -50,6 +59,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Javanese Text" size="12" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="SIE"/>
       </Properties>
       <Constraints>
@@ -88,21 +100,27 @@
     </Component>
     <Component class="javax.swing.JButton" name="edit">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Logout"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Javanese Text" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Keluar"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="340" y="270" width="100" height="40"/>
+          <AbsoluteConstraints x="310" y="270" width="100" height="40"/>
         </Constraint>
       </Constraints>
     </Component>
     <Component class="javax.swing.JButton" name="logout">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Edit"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Javanese Text" size="12" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Simpan"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="453" y="270" width="100" height="40"/>
+          <AbsoluteConstraints x="420" y="270" width="100" height="40"/>
         </Constraint>
       </Constraints>
     </Component>

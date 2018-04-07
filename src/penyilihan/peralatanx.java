@@ -32,6 +32,8 @@ public class peralatanx extends javax.swing.JPanel {
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jTable1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jTable1.setFont(new java.awt.Font("Javanese Text", 0, 12)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"SOUND",  new Integer(1)},
@@ -52,9 +54,11 @@ public class peralatanx extends javax.swing.JPanel {
                 return types [columnIndex];
             }
         });
+        jTable1.setRowHeight(25);
+        jTable1.setSelectionBackground(new java.awt.Color(0, 153, 153));
         jScrollPane2.setViewportView(jTable1);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 100, -1, 360));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, -1, 150));
     }// </editor-fold>//GEN-END:initComponents
 
 

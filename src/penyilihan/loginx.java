@@ -10,10 +10,7 @@ package penyilihan;
  * @author Mik
  */
 public class loginx extends javax.swing.JFrame {
-    
-    /**
-     * Creates new form loginx
-     */
+
     public loginx() {
         initComponents();
     }
@@ -48,6 +45,7 @@ public class loginx extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/USERNAME.png"))); // NOI18N
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 240, 280, 30));
 
+        logine.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         logine.setText("Login");
         logine.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

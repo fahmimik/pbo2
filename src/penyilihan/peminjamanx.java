@@ -35,12 +35,15 @@ public class peminjamanx extends javax.swing.JPanel {
         jmlhbrng = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         sub2 = new javax.swing.JButton();
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jLabel1.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         jLabel1.setText("KEGIATAN");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 114, -1, 20));
 
+        nmbarang.setFont(new java.awt.Font("Javanese Text", 0, 12)); // NOI18N
         nmbarang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sound", "Mic", "Kursi", "Proyektor", "Kabel Olor" }));
         nmbarang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -49,19 +52,24 @@ public class peminjamanx extends javax.swing.JPanel {
         });
         add(nmbarang, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 290, 40));
 
+        jLabel2.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         jLabel2.setText("NAMA BARANG");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 74, -1, 10));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 64, -1, 20));
         add(kegiatan, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 290, 40));
 
+        jLabel3.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         jLabel3.setText("HARI");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 160, -1, -1));
         add(jmlhbrng, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 290, 40));
 
+        jLabel4.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         jLabel4.setText("JUMLAH BARANG");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, -1, -1));
 
+        sub2.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         sub2.setText("Submit");
         add(sub2, new org.netbeans.lib.awtextra.AbsoluteConstraints(453, 270, 100, 40));
+        add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, 290, 40));
     }// </editor-fold>//GEN-END:initComponents
 
     private void nmbarangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nmbarangActionPerformed
@@ -70,6 +78,7 @@ public class peminjamanx extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

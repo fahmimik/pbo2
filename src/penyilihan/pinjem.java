@@ -53,6 +53,7 @@ public class pinjem extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        peminjaman.setFont(new java.awt.Font("Javanese Text", 1, 14)); // NOI18N
         peminjaman.setText("Peminjaman");
         peminjaman.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,6 +62,7 @@ public class pinjem extends javax.swing.JFrame {
         });
         getContentPane().add(peminjaman, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 140, 50));
 
+        peralatan.setFont(new java.awt.Font("Javanese Text", 1, 14)); // NOI18N
         peralatan.setText("Peralatan");
         peralatan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -69,6 +71,7 @@ public class pinjem extends javax.swing.JFrame {
         });
         getContentPane().add(peralatan, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 410, 140, 50));
 
+        cetak.setFont(new java.awt.Font("Javanese Text", 1, 14)); // NOI18N
         cetak.setText("Cetak");
         cetak.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,6 +80,7 @@ public class pinjem extends javax.swing.JFrame {
         });
         getContentPane().add(cetak, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 560, 140, 50));
 
+        peminjam1.setFont(new java.awt.Font("Javanese Text", 1, 14)); // NOI18N
         peminjam1.setText("Peminjam");
         peminjam1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,20 +89,21 @@ public class pinjem extends javax.swing.JFrame {
         });
         getContentPane().add(peminjam1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 140, 50));
 
+        panelx.setBackground(new java.awt.Color(255, 153, 51));
         panelx.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
 
         javax.swing.GroupLayout panelxLayout = new javax.swing.GroupLayout(panelx);
         panelx.setLayout(panelxLayout);
         panelxLayout.setHorizontalGroup(
             panelxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 900, Short.MAX_VALUE)
+            .addGap(0, 910, Short.MAX_VALUE)
         );
         panelxLayout.setVerticalGroup(
             panelxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 520, Short.MAX_VALUE)
         );
 
-        getContentPane().add(panelx, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 900, 520));
+        getContentPane().add(panelx, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 910, 520));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/JUDUL.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 900, 130));

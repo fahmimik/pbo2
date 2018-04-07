@@ -29,6 +29,7 @@ public class cetakx extends javax.swing.JPanel {
 
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
+        jButton1 = new javax.swing.JButton();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -37,10 +38,15 @@ public class cetakx extends javax.swing.JPanel {
         jScrollPane2.setViewportView(jTextArea2);
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 510, 390));
+
+        jButton1.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
+        jButton1.setText("Cetak");
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 430, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea2;
     // End of variables declaration//GEN-END:variables
