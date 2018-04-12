@@ -37,36 +37,39 @@ public class peminjamx extends javax.swing.JPanel {
         nama = new javax.swing.JTextField();
         edit = new javax.swing.JButton();
         logout = new javax.swing.JButton();
+        jLabel5 = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 204, 102));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         jLabel1.setText("NAMA");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(61, 70, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 160, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         jLabel2.setText("NIM");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 120, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 210, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         jLabel3.setText("UKM");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 260, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         jLabel4.setText("SIE");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, -1, -1));
-        add(nim, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 100, 290, 40));
-        add(ukm, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, 290, 40));
-        add(sie, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, 290, 40));
-        add(nama, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 290, 40));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 310, -1, -1));
+        add(nim, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 190, 290, 40));
+        add(ukm, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 240, 290, 40));
+        add(sie, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 290, 290, 40));
+        add(nama, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 140, 290, 40));
 
         edit.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         edit.setText("Keluar");
-        add(edit, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 270, 100, 40));
+        add(edit, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, 100, 40));
 
         logout.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         logout.setText("Simpan");
-        add(logout, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 270, 100, 40));
+        add(logout, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 360, 100, 40));
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 520));
     }// </editor-fold>//GEN-END:initComponents
 
 
@@ -76,6 +79,7 @@ public class peminjamx extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JButton logout;
     private javax.swing.JTextField nama;
     private javax.swing.JTextField nim;

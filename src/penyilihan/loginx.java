@@ -13,6 +13,7 @@ public class loginx extends javax.swing.JFrame {
 
     public loginx() {
         initComponents();
+        setLocationRelativeTo(this);
     }
 
     /**

@@ -89,21 +89,14 @@ public class pinjem extends javax.swing.JFrame {
         });
         getContentPane().add(peminjam1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 140, 50));
 
-        panelx.setBackground(new java.awt.Color(255, 153, 51));
+        panelx.setBackground(new java.awt.Color(255, 204, 102));
         panelx.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-
-        javax.swing.GroupLayout panelxLayout = new javax.swing.GroupLayout(panelx);
-        panelx.setLayout(panelxLayout);
-        panelxLayout.setHorizontalGroup(
-            panelxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 910, Short.MAX_VALUE)
-        );
-        panelxLayout.setVerticalGroup(
-            panelxLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 520, Short.MAX_VALUE)
-        );
-
-        getContentPane().add(panelx, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, 910, 520));
+        panelx.setEnabled(false);
+        panelx.setMinimumSize(new java.awt.Dimension(910, 520));
+        panelx.setName(""); // NOI18N
+        panelx.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(panelx, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 910, 520));
+        panelx.getAccessibleContext().setAccessibleName("");
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/JUDUL.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, 900, 130));
