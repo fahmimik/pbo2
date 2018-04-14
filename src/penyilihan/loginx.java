@@ -5,6 +5,8 @@
  */
 package penyilihan;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author Mik
@@ -15,6 +17,23 @@ public class loginx extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(this);
     }
+
+    public String getUsername() {
+        return nama1.getText();
+    }
+
+    public String getPassword() {
+        String pass = "";
+        char passArray[] = password.getPassword();
+        for (int i = 0; i < passArray.length; i++) {
+            pass += passArray[i];
+        }
+        return pass;
+    }
+    
+    public void loginListener (ActionListener listener){
+        logine.addActionListener(listener);
+}
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -30,7 +49,7 @@ public class loginx extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         logine = new javax.swing.JButton();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        password = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -54,7 +73,7 @@ public class loginx extends javax.swing.JFrame {
             }
         });
         getContentPane().add(logine, new org.netbeans.lib.awtextra.AbsoluteConstraints(583, 430, 130, 40));
-        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 360, 290, 40));
+        getContentPane().add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 360, 290, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/login.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 710));
@@ -63,8 +82,8 @@ public class loginx extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void logineActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logineActionPerformed
-       new pinjem().setVisible(true);
-       this.dispose();
+//        new pinjem().setVisible(true);
+        this.dispose();
 
         // TODO add your handling code here:
     }//GEN-LAST:event_logineActionPerformed
@@ -109,8 +128,8 @@ public class loginx extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JButton logine;
     private javax.swing.JTextField nama1;
+    private javax.swing.JPasswordField password;
     // End of variables declaration//GEN-END:variables
 }
