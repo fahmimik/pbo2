@@ -28,77 +28,48 @@ public class pengembalianx extends javax.swing.JPanel {
     private void initComponents() {
 
         haripeminjaman = new com.toedter.calendar.JDateChooser();
-        haripengembalian = new com.toedter.calendar.JDateChooser();
         jLabel6 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        kegiatan = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        nmbarang = new javax.swing.JComboBox<>();
-        jLabel4 = new javax.swing.JLabel();
-        jmlhbrng = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
         jLabel5 = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(910, 480));
         setPreferredSize(new java.awt.Dimension(910, 480));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        add(haripeminjaman, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 180, 290, 40));
-        add(haripengembalian, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 230, 290, 40));
+        add(haripeminjaman, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, 290, 40));
 
         jLabel6.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         jLabel6.setText("HARI PEMINJAMAN");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, 130, -1));
-
-        jLabel3.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
-        jLabel3.setText("HARI PENGEMBALIAN");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 240, 150, -1));
-
-        jLabel1.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
-        jLabel1.setText("KEGIATAN");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 140, -1, 20));
-        add(kegiatan, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 130, 290, 40));
-
-        jLabel2.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
-        jLabel2.setText("NAMA BARANG");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, -1, 20));
-
-        nmbarang.setFont(new java.awt.Font("Javanese Text", 0, 12)); // NOI18N
-        nmbarang.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Sound", "Mic", "Kursi", "Proyektor", "Kabel Olor" }));
-        nmbarang.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nmbarangActionPerformed(evt);
-            }
-        });
-        add(nmbarang, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, 290, 40));
-
-        jLabel4.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
-        jLabel4.setText("JUMLAH BARANG");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 290, -1, -1));
-        add(jmlhbrng, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 280, 290, 40));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 70, 130, -1));
 
         jButton1.setText("Kembali");
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 350, 90, 40));
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane1.setViewportView(jTable1);
+
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 120, 470, 100));
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 480));
     }// </editor-fold>//GEN-END:initComponents
-
-    private void nmbarangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nmbarangActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nmbarangActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private com.toedter.calendar.JDateChooser haripeminjaman;
-    private com.toedter.calendar.JDateChooser haripengembalian;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JTextField jmlhbrng;
-    private javax.swing.JTextField kegiatan;
-    private javax.swing.JComboBox<String> nmbarang;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
 }

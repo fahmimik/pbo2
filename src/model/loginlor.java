@@ -5,6 +5,7 @@
  */
 package model;
 
+import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import penyilihan.loginx;
@@ -15,13 +16,13 @@ import penyilihan.loginx;
  */
 public class loginlor {
 
-    private koneksipbo con;
+    private Connection con;
     private String status;
     public static String username;
     public static String password;
 
     public loginlor() throws SQLException {
-        con = new koneksipbo("root", "", "peminjamanpbo");
+        con = new koneksipbo().connect();
     }
 
     public void logincek(String username, String password) throws SQLException {
@@ -30,10 +31,10 @@ public class loginlor {
                 + "password='" + password + "'";
         
         loginlor.username=username;
-        ResultSet rs = con.getResult(query);
-        if (rs.next()){
-            this.status = rs.getString("level");
-        }
+//        ResultSet rs = con.(query);
+//        if (rs.next()){
+//            this.status = rs.getString("level");
+//        }
     }
     
     public String getStatus(){

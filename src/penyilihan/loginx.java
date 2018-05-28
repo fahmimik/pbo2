@@ -5,7 +5,10 @@
  */
 package penyilihan;
 
+import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
+import model.koneksipbo;
 
 /**
  *
@@ -13,9 +16,14 @@ import java.awt.event.ActionListener;
  */
 public class loginx extends javax.swing.JFrame {
 
+    koneksipbo con;
+    boolean check = false;
+
     public loginx() {
         initComponents();
         setLocationRelativeTo(this);
+        con = new koneksipbo();
+        logine.addActionListener(new LoginListener());
     }
 
     public String getUsername() {
@@ -30,11 +38,10 @@ public class loginx extends javax.swing.JFrame {
         }
         return pass;
     }
-    
-    public void loginListener (ActionListener listener){
-        logine.addActionListener(listener);
-}
 
+    //   public void loginListener (ActionListener listener){
+    //       logine.addActionListener(listener);
+//}
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -57,6 +64,17 @@ public class loginx extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/SELAMAT.png"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, 420, 70));
+
+        nama1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                nama1FocusGained(evt);
+            }
+        });
+        nama1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nama1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(nama1, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 270, 290, 40));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/PASSWORD.png"))); // NOI18N
@@ -73,6 +91,17 @@ public class loginx extends javax.swing.JFrame {
             }
         });
         getContentPane().add(logine, new org.netbeans.lib.awtextra.AbsoluteConstraints(583, 430, 130, 40));
+
+        password.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                passwordFocusGained(evt);
+            }
+        });
+        password.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordActionPerformed(evt);
+            }
+        });
         getContentPane().add(password, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 360, 290, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gambar/login.png"))); // NOI18N
@@ -87,6 +116,34 @@ public class loginx extends javax.swing.JFrame {
 
         // TODO add your handling code here:
     }//GEN-LAST:event_logineActionPerformed
+
+    private void passwordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passwordActionPerformed
+
+    private void nama1FocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_nama1FocusGained
+        check = false;
+    }//GEN-LAST:event_nama1FocusGained
+
+    private void passwordFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_passwordFocusGained
+        if (!check) {
+            if (nama1.getText().equals("admin")) {
+                JOptionPane.showMessageDialog(rootPane, "masukkan password untuk admin");
+                check = true;
+            } else if (nama1.getText().equals("jahrotus")) {
+                JOptionPane.showMessageDialog(rootPane, "Masukkan NIM");
+                check = true;
+            }
+            else {
+                JOptionPane.showMessageDialog(rootPane, "SALAH!!!!!!!!!");
+                check = true;
+            }
+        }
+    }//GEN-LAST:event_passwordFocusGained
+
+    private void nama1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nama1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nama1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -132,4 +189,39 @@ public class loginx extends javax.swing.JFrame {
     private javax.swing.JTextField nama1;
     private javax.swing.JPasswordField password;
     // End of variables declaration//GEN-END:variables
+
+    private class LoginListener implements ActionListener {
+
+        public LoginListener() {
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            String user = nama1.getText();
+            String pass = password.getText();
+            boolean user1 = false, pass1 = false;
+
+            if (user.equalsIgnoreCase("")) {
+                JOptionPane.showMessageDialog(rootPane, "Username Harus Diisi");
+            } else {
+                user1 = true;
+            }
+
+            if (pass.equalsIgnoreCase("")) {
+                JOptionPane.showMessageDialog(rootPane, "Password Harus Diisi");
+            } else {
+                pass1 = true;
+            }
+            if (user1 && pass1) {
+                if (user.equalsIgnoreCase("admin") && pass.equalsIgnoreCase("123")) {
+                    tux a = new tux();
+                    a.setVisible(true);
+                } else if (user.equalsIgnoreCase("jahrotus") && pass.equalsIgnoreCase("162410101065")) {
+                    pinjem a = new pinjem();
+                    a.setVisible(true);
+                }
+                
+            }
+        }
+    }
 }

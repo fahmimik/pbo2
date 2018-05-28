@@ -29,8 +29,12 @@ public class peralatantux extends javax.swing.JPanel {
 
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        update = new javax.swing.JButton();
+        create = new javax.swing.JButton();
+        namaBarang = new javax.swing.JLabel();
+        jumlah = new javax.swing.JLabel();
+        txtBarang = new javax.swing.JTextField();
+        txtJumlah = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
 
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -63,29 +67,42 @@ public class peralatantux extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 180, -1, 150));
 
-        jButton1.setText("SAVE");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        update.setText("UPDATE");
+        add(update, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, -1, -1));
+
+        create.setText("CREATE");
+        create.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                createActionPerformed(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 360, -1, -1));
+        add(create, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 100, -1, -1));
 
-        jButton2.setText("UPDATE");
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 360, -1, -1));
+        namaBarang.setText("Nama Barang :");
+        add(namaBarang, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, -1, -1));
+
+        jumlah.setText("Jumlah :");
+        add(jumlah, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 30, -1, -1));
+        add(txtBarang, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 130, -1));
+        add(txtJumlah, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 30, 140, -1));
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 480));
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void createActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+        
+    }//GEN-LAST:event_createActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton create;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
+    private javax.swing.JLabel jumlah;
+    private javax.swing.JLabel namaBarang;
+    private javax.swing.JTextField txtBarang;
+    private javax.swing.JTextField txtJumlah;
+    private javax.swing.JButton update;
     // End of variables declaration//GEN-END:variables
 }

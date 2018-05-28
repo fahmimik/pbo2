@@ -28,7 +28,7 @@ public class klogin {
     public klogin(loginlor model, loginx view) {
         theModel = model;
         theView = view;
-        theView.loginListener(new logineListener());
+//        theView.loginListener(new logineListener());
     }
 
     private class logineListener implements ActionListener {

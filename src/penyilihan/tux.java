@@ -55,10 +55,10 @@ public class tux extends javax.swing.JFrame {
         peralatantu3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         paneltu = new java.awt.Panel();
+        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1140, 710));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         pengembaliantu.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
@@ -107,6 +107,14 @@ public class tux extends javax.swing.JFrame {
         paneltu.setName(""); // NOI18N
         paneltu.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         getContentPane().add(paneltu, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 200, 910, 480));
+
+        jButton1.setText("Logout");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1140, 710));
 
         pack();
@@ -148,6 +156,12 @@ public class tux extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_pengembaliantuActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+                            loginx a = new loginx();
+                    a.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -184,6 +198,7 @@ public class tux extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private java.awt.Panel paneltu;

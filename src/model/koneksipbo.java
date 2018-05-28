@@ -15,21 +15,34 @@ import java.sql.Statement;
  * @author X
  */
 public class koneksipbo {
-    protected Connection con;
-    protected Statement state;
+    private static Connection connection = null;
+    private final String url = "jdbc:postgresql://localhost:5432/peminjaman_PBO";
+    private final String user = "postgres";
+    private final String password = "admin";
     
-    public koneksipbo (String username, String password, String db ) throws SQLException{
+    public Connection connect() throws SQLException{
+        try{
+            connection=DriverManager.getConnection(url,user,password);
+            System.out.println("koneksi berhasil");
+        }
+        catch (Exception e){
+            System.out.println(e.getMessage());
+        }
+        return connection;
+    }
+    
+//    public koneksipbo (String username, String password, String db ) throws SQLException{
         
-        String url = "jdbc:mysql://localhost:3306/"+db;
-        con = DriverManager.getConnection(url, username, password);
-        state = con.createStatement();   
-    }
+//        String url = "jdbc:mysql://localhost:3306/"+db;
+//        con = DriverManager.getConnection(url, username, password);
+//        state = con.createStatement();   
+//    }
     
-    public void execute (String sql) throws SQLException{
-        this.state.executeUpdate(sql);
-    }
+ //   public void execute (String sql) throws SQLException{
+ //       this.state.executeUpdate(sql);
+//    }
     
-    public ResultSet getResult(String sql) throws SQLException{
-        return state.executeQuery(sql);
-    }
+//    public ResultSet getResult(String sql) throws SQLException{
+//        return state.executeQuery(sql);
+//    }
 }

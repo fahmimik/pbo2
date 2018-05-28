@@ -60,6 +60,12 @@ public class peminjamanx extends javax.swing.JPanel {
         jLabel2.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
         jLabel2.setText("NAMA BARANG");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 90, -1, 20));
+
+        kegiatan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                kegiatanActionPerformed(evt);
+            }
+        });
         add(kegiatan, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 130, 290, 40));
 
         jLabel3.setFont(new java.awt.Font("Javanese Text", 1, 12)); // NOI18N
@@ -90,6 +96,11 @@ public class peminjamanx extends javax.swing.JPanel {
     private void nmbarangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nmbarangActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_nmbarangActionPerformed
+
+    private void kegiatanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_kegiatanActionPerformed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_kegiatanActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
