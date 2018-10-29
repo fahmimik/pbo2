@@ -44,13 +44,13 @@ public class klogin {
                     tux x  = new tux();
                     x.setVisible(true);
                         break;
-                    
+
                     case "2" :
                         theView.dispose();
                     pinjem y = new pinjem();
                     y.setVisible(true);
                         break;
-                        
+
                     default :
                         JOptionPane.showMessageDialog(theView, "salah lorr");
 
