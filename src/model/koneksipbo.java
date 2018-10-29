@@ -19,7 +19,7 @@ public class koneksipbo {
     private final String url = "jdbc:postgresql://localhost:5432/peminjaman_PBO";
     private final String user = "postgres";
     private final String password = "admin";
-    
+
     public Connection connect() throws SQLException{
         try{
             connection=DriverManager.getConnection(url,user,password);
@@ -30,19 +30,4 @@ public class koneksipbo {
         }
         return connection;
     }
-    
-//    public koneksipbo (String username, String password, String db ) throws SQLException{
-        
-//        String url = "jdbc:mysql://localhost:3306/"+db;
-//        con = DriverManager.getConnection(url, username, password);
-//        state = con.createStatement();   
-//    }
-    
- //   public void execute (String sql) throws SQLException{
- //       this.state.executeUpdate(sql);
-//    }
-    
-//    public ResultSet getResult(String sql) throws SQLException{
-//        return state.executeQuery(sql);
-//    }
 }

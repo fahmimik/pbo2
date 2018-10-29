@@ -29,17 +29,13 @@ public class loginlor {
         String query = "select level from user "
                 + "where username='" + username + "' and "
                 + "password='" + password + "'";
-        
+
         loginlor.username=username;
-//        ResultSet rs = con.(query);
-//        if (rs.next()){
-//            this.status = rs.getString("level");
-//        }
     }
-    
+
     public String getStatus(){
         return this.status;
     }
-    
-    
+
+
 }
